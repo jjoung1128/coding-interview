@@ -17,4 +17,10 @@ public class FindAndReplaceInStringTest {
         String result = FindAndReplaceInString.findReplaceString("abcd", new int[]{0,2}, new String[]{"ab", "ec"}, new String[]{"eee", "ffff"});
         assertEquals("eeecd", result);
     }
+
+    @Test
+    public void test3() {
+        String result = FindAndReplaceInString.findReplaceString("vmokgggqzp", new int[]{3,5,1}, new String[]{"kg","ggq","mo"}, new String[]{"s","so","bfr"});
+        assertEquals("vbfrssozp", result);
+    }
 }
