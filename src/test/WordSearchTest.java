@@ -39,13 +39,6 @@ public class WordSearchTest {
                 {'A', 'D', 'E', 'E'}
         };
 
-        char[][] board = new char[][]{
-                {'A', 'B', 'C', 'E'},
-                {'S', 'F', 'C', 'S'},
-                {'A', 'B', 'C', 'B'}
-        };
-
-
         String word = "ABCB";
         boolean result = WordSearch.exist(board, word);
         assertFalse(result);

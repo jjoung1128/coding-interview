@@ -18,7 +18,7 @@ public class WordSearch {
         // when we get the dictionary empty we return true
         // else return false if we reach the last letter and still cannot find the answer
 
-        boolean[][] lookUpVisited = new boolean[board.length][boardp0]
+//        boolean[][] lookUpVisited = new boolean[board.length][boardp0];
 
 
 

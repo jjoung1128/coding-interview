@@ -7,7 +7,6 @@ Collect all the leaf nodes.
 Remove all the leaf nodes.
 Repeat until the tree is empty.
 
-
 Example 1:
 Input: root = [1,2,3,4,5]
 Output: [[4,5,3],[2],[1]]
@@ -22,6 +21,21 @@ import java.util.List;
 
 public class FindLeavesOfBinaryTree {
     public static List<List<Integer>> findLeaves(TreeNode root) {
-        return new ArrayList();
+        List<List<Integer>> result = new ArrayList<>();
+
+        populateResult(root, result);
+        return result;
+    }
+
+    public static int populateResult(TreeNode node, List<List<Integer>> result) {
+        if (node == null) {
+            return -1;
+        }
+        int currentHeight = Math.max(populateResult(node.left, result), populateResult(node.right, result)) + 1;
+        if (result.size() < currentHeight + 1) {
+            result.add(new ArrayList<>());
+        }
+        result.get(currentHeight).add(node.val);
+        return currentHeight;
     }
 }
