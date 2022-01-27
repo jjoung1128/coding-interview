@@ -14,7 +14,7 @@ Explanation:
 [[3,5,4],[2],[1]] and [[3,4,5],[2],[1]] are also considered correct answers since per each level it does not matter the order on which elements are returned.
  */
 
-import dto.TreeNode;
+import data.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

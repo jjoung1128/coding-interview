@@ -1,6 +1,6 @@
 package test;
 
-import dto.TreeNode;
+import data.TreeNode;
 import main.FindLeavesOfBinaryTree;
 import org.junit.Test;
 
